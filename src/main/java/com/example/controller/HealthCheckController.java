@@ -19,7 +19,9 @@ public class HealthCheckController
     @GetMapping("/heartbeat")
     public ResponseEntity<String> HeardBeat(){
 
+        logger.info("se invoco logger");
 
+        logger.info("se invoco logger whh");
         return ResponseEntity.ok("HearBeat OK");
     }
 
